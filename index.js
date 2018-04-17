@@ -21,7 +21,7 @@ function currentLine(katzDeliLine){
     var line = 'The line is currently: ' + katzDeliLine.reduce(function(customer, position){
       line =+ (position + 1) + '. ' + (customer);
       position++;
-    }).join(',');
+    }).join(', ');
     return line;
  }
 }
