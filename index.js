@@ -17,10 +17,9 @@ function currentLine(katzDeliLine){
   if (katzDeliLine.length === 0){
     return 'The line is currently empty.';
   } else {
-    var line = 'The line is currently';
-  for (var i = 0; i < katzDeliLine.length; i++){
-    line =+ `{i + 1}. ` + katzDeliLine[i] + ', '
-  }
-  return line
-}
+  var customerPosition = [];
+   katzDeliLine.forEach(function(customer){
+     katzDeliLine.push((indexOf(customer) + 1) + ". " + customer);
+   });
+   return 'The line is currently: ' + customerPosition.join(', ')
 }
