@@ -19,7 +19,6 @@ function currentLine(katzDeliLine){
   } else {
     var line = 'The line is currently: ' + katzDeliLine.reduce(function(customer){
       line =+ customer;
-      position++;
     });
     return line;
  }
