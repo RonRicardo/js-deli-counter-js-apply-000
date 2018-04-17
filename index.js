@@ -19,7 +19,9 @@ function currentLine(katzDeliLine){
   } else {
   var customerPosition = [];
    katzDeliLine.forEach(function(customer){
-     katzDeliLine.push((katzDeliLine.indexOf(customer) + 1) + ". " + customer);
+     var position = 1;
+     katzDeliLine.push(position + ". " + customer)
+     position++;
    });
    return 'The line is currently: ' + customerPosition.join(', ')
  }
