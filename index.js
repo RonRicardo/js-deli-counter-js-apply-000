@@ -17,9 +17,8 @@ function currentLine(katzDeliLine){
   if (katzDeliLine.length === 0){
     return 'The line is currently empty.';
   } else {
-    var line = 'The line is currently: ' + katzDeliLine.reduce(function(customer, position){
-      var position = 0;
-      line =+ (position + 1) + '. ' + (customer);
+    var line = 'The line is currently: ' + katzDeliLine.reduce(function(customer){
+      line =+ customer;
       position++;
     });
     return line;
