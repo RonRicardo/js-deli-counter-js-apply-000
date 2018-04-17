@@ -21,7 +21,7 @@ function currentLine(katzDeliLine){
    katzDeliLine.forEach(function(customer){
      var position = 1;
      customerPosition.push(position + ". " + customer)
-     position++;
+    position++
    });
    return 'The line is currently: ' + customerPosition.join(', ')
  }
