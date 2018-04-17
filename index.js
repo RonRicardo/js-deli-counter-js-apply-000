@@ -19,7 +19,7 @@ function currentLine(katzDeliLine){
   } else {
   var customerPosition = [];
    katzDeliLine.forEach(function(customer){
-     katzDeliLine.push((indexOf(customer) + 1) + ". " + customer);
+     katzDeliLine.push((katzDeliLine.indexOf(customer) + 1) + ". " + customer);
    });
    return 'The line is currently: ' + customerPosition.join(', ')
  }
