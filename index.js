@@ -21,7 +21,7 @@ function currentLine(katzDeliLine){
       position = 0;
       line =+ (position + 1) + '. ' + (customer);
       position++;
-    }.join(','));
+    });
     return line;
  }
 }
