@@ -22,4 +22,5 @@ function currentLine(katzDeliLine){
      katzDeliLine.push((indexOf(customer) + 1) + ". " + customer);
    });
    return 'The line is currently: ' + customerPosition.join(', ')
+ }
 }
