@@ -20,7 +20,7 @@ function currentLine(katzDeliLine){
     var currentLine = 'The line is currently:'
     currentLine += katzDeliLine.reduce(function (customer, position){
       position = 0;
-      currentLine =+ ${positon + 1}'.' {customer}
+      currentLine =+ (position + 1) + '. ' + (customer)
       position++;
     }.join(','))
     return currentLine;
