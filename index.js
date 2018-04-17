@@ -20,7 +20,7 @@ function currentLine(katzDeliLine){
   var customerPosition = [];
    katzDeliLine.forEach(function(customer){
      var position = 1;
-     katzDeliLine.push(position + ". " + customer)
+     customerPositon.push(position + ". " + customer)
      position++;
    });
    return 'The line is currently: ' + customerPosition.join(', ')
